@@ -1,0 +1,224 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>what-broad</title>
+    <style>
+      .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+
+      .card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      .card-content {
+        flex: 1;
+      }
+
+      .card-content h2 {
+        margin: 0 0 10px 0;
+      }
+
+      .card-content p {
+        margin: 0;
+      }
+
+      .card button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+
+      .variable-name {
+        float: left;
+      }
+
+      .variable-contact {
+        float: right;
+      }
+
+      .header {
+        background-color: #04aa6d;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        align: center;
+        border-radius: 5px;
+      }
+
+      .logo {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0.1px;
+        margin-top: 0.1px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        transition: transform.2s;
+      }
+
+      .logo:hover {
+        transform: scale(1.1);
+      }
+
+      .strtbtn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        float: right;
+      }
+
+      .button:hover {
+        background-color: #007cff;
+      }
+
+      .carousel-inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .selbtn {
+        float: right;
+      }
+
+      .container {
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: transform.2s;
+      }
+
+      .txtbox {
+        max-width: 80%;
+        border-radius: 5px;
+        min-height: 50px;
+        min-width: 180px;
+      }
+
+      .text {
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: transform.2s;
+        resize: verticle;
+        resize: horizontal;
+      }
+
+      .text:hover {
+        transform: scale(1.05);
+      }
+      .txtbtn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        float: right;
+        margin-bottom: 5px;
+      }
+
+      .txtbtn:hover {
+        transform: scale(1.1);
+      }
+
+      .container:hover {
+        transform: scale(1.05);
+      }
+      input[type="range"] {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="../static/2.png" alt="Logo" class="logo" />
+      <span class="variable-name">Variable Name</span>
+      <span class="variable-contact">Variable Contact</span>
+    </div>
+
+    <div class="contaier">
+      <div class="card">
+        <img src="../static/excel-logo.jpeg" alt="Placeholder Image" />
+        <div class="card-content">
+          <div class="carousel-inner">
+            <h1>context 1 name</h1>
+            <p>context 2 date - conetxt 3 size</p>
+          </div>
+          <button a href="" class="selbtn">select</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../static/excel-logo.jpeg" alt="Placeholder Image" />
+        <div class="card-content">
+          <div class="carousel-inner">
+            <h1>context 1 name</h1>
+            <p>context 2 date - conetxt 3 size</p>
+          </div>
+          <button a href="" class="selbtn">select</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../static/excel-logo.jpeg" alt="Placeholder Image" />
+        <div class="card-content">
+          <div class="carousel-inner">
+            <h1>context 1 name</h1>
+            <p>context 2 date - conetxt 3 size</p>
+          </div>
+          <button a href="" class="selbtn">select</button>
+        </div>
+      </div>
+      <div class="text">
+        <h3>Enter the text to be sent</h3>
+        <form action="/submit-text/" method="get">
+          <textarea
+            class="txtbox"
+            name="user-text"
+            placeholder="Type Here"
+            wrap="soft"
+          ></textarea>
+          <input type="submit" class="txtbtn" value="submit" />
+        </form>
+      </div>
+
+
+
+ 
+    <a href=""><button class="strtbtn">start</button></a>
+  </body>
+</html>

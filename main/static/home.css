@@ -1,0 +1,207 @@
+body {
+    background-color: beige;
+}
+
+
+
+.dplogo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    background-color: #4e4d4d;
+    border: solid;
+    border-radius: 5%;
+    border-color: rgb(44, 159, 191);
+    animation: sparckle;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    transition: transform.2s;
+}
+
+.dplogo:hover {
+    transform: scale(1.1);
+    border-color: aqua;
+}
+
+.navbar {
+    width: 99.99%;
+    float: inline-end;
+    background-color: #555;
+    overflow: auto;
+    overflow: hidden;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 18px;
+    padding-left: 0%;
+    padding-right: 0%;
+    color: white;
+    font-size: 17px;
+    width: 18.2%;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+
+.navbar a.active {
+    background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+
+#welcome_note {
+    font-size: 30px;
+    font-style: normal;
+    color: #003220;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+
+}
+
+.text {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    right: 40%;
+}
+
+
+.moto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #99932a;
+}
+
+#flip {
+    
+    height: 25px;
+    overflow: hidden;
+    
+}
+
+#flip>div>div {
+    color: #ffffff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+    
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+    
+}
+
+#flip div div {
+    background: #42c58a;
+}
+
+#flip div:first-child div {
+    background: #4ec7f3;
+}
+
+#flip div:last-child div {
+    background: #DC143C;
+}
+
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+
+#whatlogo {
+    border-width: 2px;
+    border: solid gold;
+    border-radius: 25px;
+    background-color: #42c58a;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
+    float: right;
+    transition: .2s;
+}
+#whatlogo:hover{
+    transform: scale(1.1);
+    border-color: goldenrod;
+
+}
+#text{
+    align-items: left;
+    max-width: 50%;
+}
+
+#btn{
+    padding: 8px;
+    font-size: larger;
+    margin-top: 20px;
+    align-self: center;
+    color: rgb(4, 93, 4);
+    background-color: #4ec7f3;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 25px;
+    border-color: gold;
+    box-shadow: #000;
+    border-width: 2px;
+    transition: 0.2s;
+}
+
+#btn:hover{
+    transform: scale(1.1);
+
+}

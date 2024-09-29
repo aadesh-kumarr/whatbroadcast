@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>download</title>
+  <style type='text/css'>
+     
+
+
+body{
+  margin-bottom:5%;
+  padding-bottom:20px;
+}
+  
+ #dload{
+  margin-top: 0%;
+  text-align: center;
+  width: 100%;
+  background-color:rgb(110, 54, 14);
+  font-size: 30px;
+  color: #d8c246;
+  border-radius: 5px;
+  border: solid;
+  border-color: gold;
+ }
+  
+  .logo{
+    width: 45px ;
+    height: 45px;
+    border-radius: 5px;
+    background-color: beige;
+  }
+
+  h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .home{
+      padding: 2%;
+      border-radius: 20px;
+      width: 50%;
+      background-color: rgb(133, 126, 126);
+      color: antiquewhite;
+  }
+  
+  .moto{
+      flex: content;
+      text-align: center;
+      flex-direction: column;
+      font-size: larger;
+      font-family:'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      text-decoration:underline;
+    }
+#decoded{
+  object-position: 45%;
+  overflow-x: auto;
+  height: 50px;
+  width: 50px;
+  float: left;
+  background-color: #4e4d4d;
+  border: solid;
+  border-radius: 5%;
+  border-color: rgb(44, 159, 191);
+  animation: sparckle;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  transition: transform.2s;
+}
+
+#logo{
+    object-position: left top;
+    float: right;
+    width: 30%;
+    height: 30%;
+}
+
+.paymentdetail{
+  margin-bottom:10px;
+  background-color: burlywood;
+}
+
+
+#txt1{
+  float: inline-start;
+
+}
+
+.indian{
+  border: solid;
+  border-radius: 5px;
+  border-color: rgb(127, 242, 255);
+  display: flex;
+  flex-direction: column;
+  float: left;
+  background-color: azure;
+  height: auto;
+  width: 40%;
+}
+
+#for{
+  text-transform: capitalize;
+  font-size: larger;
+  align-self: center;
+  min-width: fit-content;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: antiquewhite;
+  border: 2px solid antiquewhite;
+  border-radius: 2px;
+
+}
+
+#trial{
+  text-transform: capitalize;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border:solid #000;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 2px;
+  max-width: fit-content;
+  flex-direction: column;
+  align-self: center;
+}
+
+.trialbtn{
+  max-width: min-content;
+  align-self: center;
+  border-color: #d8c246;
+  background-color: aqua;
+  border-radius: 5px;
+  transition: transform.2s;
+}
+
+.trialbtn:hover{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: min-content;
+  align-self: center;
+  background-color: aquamarine;
+  border-radius: 5px;
+  transform: scale(1.2);
+
+}
+
+.foreign{
+  border: solid;
+  border-radius: 5px;
+  border-color: rgb(127, 242, 255);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  float: right;
+  background-color: azure;
+  height: auto;
+  width: 40%;
+  text-align: justify;
+}
+
+  #trialf{
+    text-transform: capitalize;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border:solid #000;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px;
+    max-width: fit-content;
+    flex-direction: column;
+    align-self: center;
+}
+#forf{
+  text-transform: capitalize;
+  font-size: larger;
+  align-self: center;
+  min-width: fit-content;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: antiquewhite;
+  border: 2px solid antiquewhite;
+  border-radius: 2px;
+}
+
+
+
+
+  </style>
+</head>
+
+
+<body>
+  <p id="dload">download</p>
+  
+  <img src="../static/2.png" alt="my anme "id='decoded'>
+  
+  
+  <h1>welcome to what-broadcast</h1>
+  <img src="../static/logo.png" alt="my anme" id="logo">
+  
+  <div class="home">
+    
+      <div class="moto">       
+        <p>
+          our moto is to help you in expanding your business over the globe 
+        </p>  
+      </div>
+      
+      <div class="para1">
+      <p>Bulk whatsapp marketing software for promoting your business over the globe using what-broad cast
+      </p>
+      <p>We provide tour customer the full control of the software such as the speed control, sleep control, delay control and many more which collectively work for anti-block module.</p>
+      </div>
+  </div>
+  <hr width="100%"
+      size="2px"
+      color="black">
+
+    <div class="paymentdetail">
+      <div class="indian">
+        <p id="for">for Inndian clients</p>
+        <p id="trial" >trial version </p> 
+        <p>Rs 50 for 5 days</p>
+        <button type="button" class="trialbtn"  onclick="window.location.href='#'">Trial</button>
+        <hr size="2px",
+        color="black",
+        width=100%>
+    
+        <p id="trial">yearly subscription </p>
+        <p>Rs 700 for 365 days</p>
+        <button type="button" class="trialbtn"  onclick="window.location.href='#'">yearly subscription</button>
+      </div>
+
+      <div class="foreign">
+        <p id="forf">for international clients </p>
+        <p id="trialf">trial version</p>
+        <p>5$ for 5 days</p>
+        <button type="button" class="trialbtn"  onclick="window.location.href='#'">Trial</button>
+        <hr size="2px",
+        color="black",
+        width=100%>
+
+        <p id="trial">yearly subscription </p>
+        <p>20$ for 365 days</p>
+        <button type="button" class="trialbtn"  onclick="window.location.href='#'">yearly subscription</button>
+      </div>
+      </div>
+    </div>
+
+</body>
+</html>
