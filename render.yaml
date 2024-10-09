@@ -4,3 +4,18 @@ services:
     env: python
     buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
     startCommand: "gunicorn your_project_name.wsgi:application --bind 0.0.0.0:$PORT"
+
+
+services:
+  - type: web
+    name: django-app
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+    startCommand: "gunicorn your_project_name.wsgi:application --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: WHATBROADCAST.settings
+      - key: PORT
+        value: 0.0.0.0  # Default port or set this as needed
